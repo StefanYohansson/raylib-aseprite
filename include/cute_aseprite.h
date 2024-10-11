@@ -98,6 +98,10 @@
 #ifndef CUTE_ASEPRITE_H
 #define CUTE_ASEPRITE_H
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 typedef struct ase_t ase_t;
 
 ase_t* cute_aseprite_load_from_file(const char* path, void* mem_ctx);
@@ -306,6 +310,10 @@ struct ase_t
 
 	void* mem_ctx;
 };
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif // CUTE_ASEPRITE_H
 
